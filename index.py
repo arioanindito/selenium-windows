@@ -43,7 +43,7 @@ class Test(unittest.TestCase):
                 csv_file.write(f"{key}, {average}\n")
 
         # This makes a JSON output file and prettifies it
-        with open("output" + ".json", "w", encoding="utf-8") as file:
+        with open("output_json" + ".json", "w", encoding="utf-8") as file:
             json.dump(result, file, ensure_ascii=False, indent=4)
 
     def tearDown(self):
